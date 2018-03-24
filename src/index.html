@@ -1,14 +1,252 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>JaddusFoodField</title>
-  <base href="/">
+  <head>
+    <title>Jaddu's Food Field</title>
+    <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic%7CHerr+Von+Muellerhoff:regular%7CCabin:regular%7CCabin:regular,italic,500,500italic,600,600italic,700,700italic&amp;subset=latin-ext,latin-ext,latin,latin" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+  </head>
+
+  <body>
+  	<app-root>
+	    <!-- <header class="container masthead clearfix">
+	      <div class="row inner">
+	        <div class="col-md-3 col-lg-3 col-sm-12" id="logo_container">
+	          <img src="./images/jff_logo_1.1.png" id="header_logo"/>
+	        </div>
+	        <nav class="nav nav-masthead col-md-6 col-lg-6 col-sm-12">
+	          <div>
+	            <a class="nav-link active" href="#">Home</a>
+	            <a class="nav-link" href="#about_us">About Us</a>
+	            <a class="nav-link" href="#">Menu</a>
+	            <a class="nav-link" href="#">Gallery</a>
+	            <a class="nav-link" href="#">Contact Us</a>
+	          </div>
+	        </nav>
+	      </div>
+	    </header>
+	    <div class="site-wrapper">
+
+	      <div class="site-wrapper-inner" id="home_top">
+
+	        <div class="section_container">
+
+	          <main role="main" class="inner cover" id="home_main">
+	            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	              <ol class="carousel-indicators">
+	                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	              </ol>
+	              <div class="carousel-inner">
+	                <div class="carousel-item active home_slides" id="slide_1">
+	                  <div class="slide_container">
+	                    <h1 id="discover_us" class="cover-heading d-block w-100 slides_headings">Discover Our Story.</h1>
+	                    <p class="lead">Jaddu's Food Field showcases the finest in Indian, Mexican, Continental, and various other cuisines, we are also complimented by an exceptional dining experience built on careful attention to every aspect of service, food, and atmosphere.</p>
+	                    <p class="lead">
+	                      <a href="#" class="btn btn-lg btn-secondary" style="background-color: #383838;">Learn more</a>
+	                    </p>
+	                  </div>
+	                </div>
+	                <div class="carousel-item home_slides">
+	                  <div class="slide_container">
+	                    <h1 class="cover-heading d-block w-100 slides_headings">Uncover Our Food.</h1>
+	                    <p class="lead">Short texts relating to the food of the restaurant to attract users + images of the foods.</p>
+	                    <p class="lead">
+	                      <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+	                    </p>
+	                  </div>
+	                </div>
+	                <div class="carousel-item home_slides">
+	                  <div class="slide_container">
+	                    <h1 class="cover-heading d-block w-100 slides_headings">Recover In Our Comfortable Seating.</h1>
+	                    <p class="lead">Short texts relating to the seating arrangement of the restaurant to attract users + image of the restaurant seating.</p>
+	                    <p class="lead">
+	                      <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+	                    </p>
+	                  </div>
+	                </div>
+	              </div>
+	              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	                <span class="sr-only">Previous</span>
+	              </a>
+	              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	                <span class="sr-only">Next</span>
+	              </a>
+	            </div>
+	          </main>
+	          
+	          <div id="down_arrow">
+	            <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+	              <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+	            </svg>
+	            <div class="down-arrow down-arrow--bubble">
+	              <div class="arrow_container">
+	                <div id="arrow"></div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div> -->
+	</app-root>
+	<!-- <div id="down_arrow">
+		<a href="/home/#footer_contact">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow"></div>
+		      </div>
+		    </div>
+	    </a>
+	</div> -->
+	
+    <div id="footer_contact">
+    	<div id="contact-us" class="row">
+    		<div class="col-md-1"></div>
+    		<div id="contact_section" class="col-md-3">
+    			<ul>
+    				<li>
+	    				<h3>Contact Us</h3>
+	    			</li>
+    				<li>
+    					<i class="material-icons">phone</i>
+    					<span>+91 2812561619</span>
+    				</li>
+    				<li>
+    					<i class="material-icons">smartphone</i>
+    					<span>+91 7874390226</span>
+    				</li>
+    				<li>
+    					<i class="material-icons">email</i>
+    					<span>jaddusfoodfield@gmail.com</span>
+    				</li>
+    			</ul>
+    		</div>
+    		<div id="hours_section" class="col-md-4">
+				<ul>
+    				<li>
+	    				<h3>Hours</h3>
+	    			</li>
+    				<li>
+    					<i class="material-icons">access_time</i>
+    					<span>Monday - Sunday: 11am - 11pm</span>
+    				</li>
+    			</ul>
+			</div>
+			<div id="location_section" class="col-md-3">
+				<h3>Location</h3>
+				<div id="map"></div>
+				<ul>
+    				<li>
+    					<i class="material-icons">location_on</i>
+    					<span>
+    						Cross Road Bulding,
+						</span>
+    				</li>
+
+    				<li>
+    					<i class="material-icons location_hide">location_on</i>
+						<span>
+							Near Juna Jakat Naka
+						</span>
+    				</li>
+
+    				<li>
+						<i class="material-icons location_hide">location_on</i>
+						<span>
+							Kalawad Road, Rajkot - 360007
+						</span>
+    				</li>
+
+    				<li>
+    					<i class="material-icons location_hide">location_on</i>
+						<span>
+							Gujarat, India.
+						</span>
+    				</li>
+    			</ul>
+			</div>
+			<script type="text/javascript">
+				function initMap() {
+					var uluru = {lat: 22.273626, lng: 70.757280};
+					var map = new google.maps.Map(document.getElementById('map'), {
+					  zoom: 16,
+					  center: uluru
+					});
+					var marker = new google.maps.Marker({
+					  position: uluru,
+					  map: map
+					});
+
+					$('nav div a.nav-link').click(
+		        		function() { 
+		        			$('nav div a.active').removeClass("active"); 
+		        			$(this).addClass("active"); 
+		        		}
+		    		);
+				};
+
+		        // $("a .nav-link").on("click", function(){
+		        //    $(".nav").find(".active").removeClass("active");
+		        //    $(this).parent().addClass("active");
+		        // });
+			</script>
+		</div>
+	</div>
+
+	<footer class="mastfoot">
+	  <div class="inner">
+	    <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+	  </div>
+	</footer>
+
+    <!-- <iframe
+	  width="600"
+	  height="450"
+	  frameborder="0" style="border:0"
+	  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDRAwQyfE40w8YJQdG6Zp5DtrAENlnuKPM
+	    &q=ChIJtcaxrqlZwokRfwmmibzPsTU" allowfullscreen>
+	</iframe> -->
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="./assets/app.js"></script>
+    <script async defer
+	  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRAwQyfE40w8YJQdG6Zp5DtrAENlnuKPM&callback=initMap">
+	</script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+<!-- <header class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">LAA Partners</h3>
+              <nav class="nav nav-masthead justify-content-md-center">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Contact</a>
+              </nav>
+            </div>
+          </header> -->

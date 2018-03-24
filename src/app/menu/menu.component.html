@@ -1,0 +1,688 @@
+<div id="menu-page">
+	<div class="bgimg-1">
+		<div class="caption" style="background-color: rgba(29,31,33,0.7); color: #f7f7f7;">
+		  <span class="cuisine-border" style="font-size:5rem;">Indian Cuisine</span>
+		  <p>Our firm is one of the leading organization involved in offering wide range of Indian Food to our esteemed customers. Indian food is characterized by the use of hot spices in the culinary preparations all over the country. This is not an absolute truth since Indians make the finest in sweets and deserts besides hot curry Nevertheless Indian food is unique thanks to the pot pourri of cultures that integrated together since centuries. Indian recipes are mind boggling. Each recipe can be cooked in its own style using local ingredients and flavors.</p>
+		</div>
+		<div id="down_arrow">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<!-- <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+		<h3 style="text-align:center;">Indian Cuisine</h3>
+		<p>Our firm is one of the leading organization involved in offering wide range of Indian Food to our esteemed customers. Indian food is characterized by the use of hot spices in the culinary preparations all over the country. This is not an absolute truth since Indians make the finest in sweets and deserts besides hot curry Nevertheless Indian food is unique thanks to the pot pourri of cultures that integrated together since centuries. Indian recipes are mind boggling. Each recipe can be cooked in its own style using local ingredients and flavors.</p>
+		<div id="down_arrow">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow"></div>
+		      </div>
+		    </div>
+		</div>
+	</div> -->
+	<div style="position:relative;">
+		<div style="color:#777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+		    <h3 style="text-align:center;">Indian Curries</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of indianCurries1; let i = index;">
+		    			{{ item.itName }}
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of indianCurries2; let i = index;">
+		    			{{ item.itName }}
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of indianCurries3; let i = index;">
+		    			{{ item.itName }}
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center;">
+		    		<p *ngFor="let item of indianCurries4; let i = index;">
+		    			{{ item.itName }}
+		    		</p>
+		    	</div>
+		    </div>
+
+		    <h3 style="text-align:center; margin-top: 10vh;">Dal & Rice</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-3" style="">
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of indianDal1; let i = index;">
+		    			{{ item.itName }}
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; ">
+		    		<p *ngFor="let item of indianDal2; let i = index;">
+		    			{{ item.itName }}
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3">
+		    	</div>
+		    </div>
+
+		    <h3 style="text-align:center; margin-top: 10vh;">Indian Bread</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-4" style="text-align: center;">
+		    	</div>
+		    	<div class="col-md-4" style="text-align: center; ">
+		    		<p *ngFor="let item of indianBread1; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		    			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-4">
+		    	</div>
+		    </div>
+		</div>
+		<div id="down_arrow" style="transform: rotate(180deg); z-index: 1;">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow" style="transform: rotate(-135deg);"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div class="bgimg-2">
+		<div class="caption" style="background-color: rgba(29,31,33,0.7);color: #f7f7f7;">
+		  <span class="cuisine-border" style="font-size:5rem;">Mexican Cuisine</span>
+		  <p>We are engaged in offering Mexican Food to our clients. Known for intense flavours, colourful presentations, unique spicing and seasoning; learn these exciting and colourful recipes that can brighten the mood at the dinner table. True to its Mexican taste, dressed with grated cheese.</p>
+		</div>
+		<div id="down_arrow">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div style="position:relative;">
+		<div style="color:#777;background-color:#fff;text-align:center;padding:50px 80px;text-align: justify;">
+		  <h3 style="text-align:center;">Mexican Dishes</h3>
+	      <div style="margin-top: 5vh; margin-bottom: 5vh;">
+	      	<p style=" border-top: 2px solid #f7941d;"></p>
+	      </div>
+	      <div class="row" style="font-size: 1rem;">
+	      	<div class="col-md-4" style="text-align: center;">
+	      	</div>
+	      	<div class="col-md-4" style="text-align: center; ">
+      		  <p *ngFor="let item of mexican1; let i = index;">
+  			    {{ item.itName }}
+  			    <br>
+  			    <i style="font-size: 0.8rem;"> {{ item.id }} </i>
+      		  </p>
+	      	</div>
+	      	<div class="col-md-4">
+	      	</div>
+	      </div>
+		</div>
+		<div id="down_arrow" style="transform: rotate(180deg); z-index: 1;">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow" style="transform: rotate(-135deg);"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div class="bgimg-3">
+		<div class="caption" style="background-color: rgba(29,31,33,0.7);color: #f7f7f7;">
+		  <span class="cuisine-border" style="font-size:5rem;">Thai Cuisine</span>
+		  <p>We offer Thai Food to our most reliable customers. Thai Food is also demanded in weddings, along with Indian food. Hence, we serve many dishes for Thai food lovers. These dishes are prepared using genuine Thai ingredients that are sourced from the reliable vendors of the market. Moreover, our chefs make sure to give real Thai taste to the dishes.</p>
+		</div>
+		<div id="down_arrow">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div style="position:relative;">
+		<div style="color:#777;background-color:#fff;text-align:center;padding:50px 80px;text-align: justify;">
+		  <h3 style="text-align:center;">Thai Dishes</h3>
+	      <div style="margin-top: 5vh; margin-bottom: 5vh;">
+	      	<p style=" border-top: 2px solid #f7941d;"></p>
+	      </div>
+	      <div class="row" style="font-size: 1rem;">
+	      	<div class="col-md-4" style="text-align: center;">
+	      	</div>
+	      	<div class="col-md-4" style="text-align: center; ">
+      		  <p *ngFor="let item of thai1; let i = index;">
+  			    {{ item.itName }}
+      		  </p>
+	      	</div>
+	      	<div class="col-md-4">
+	      	</div>
+	      </div>
+		</div>
+		<div id="down_arrow" style="transform: rotate(180deg); z-index: 1;">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow" style="transform: rotate(-135deg);"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div class="bgimg-4">
+		<div class="caption" style="background-color: rgba(29,31,33,0.7);color: #f7f7f7;">
+		  <span class="cuisine-border" style="font-size:5rem;">Chinese Cuisine</span>
+		  <p>We are offering our client an excellent quality range of Chinese Food. A collection of vegetarian Chinese food recipes that we offer are: Veg. Chowmin, Hakka Noodles, Veg. Manchurian, Veg. Fried Rice, Chilly Cheese, Rich Creamy Soups, etc. Our range of Chinese Food are available at most competitive prices.</p>
+		</div>
+		<div id="down_arrow">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div style="position:relative;">
+		<div style="color:#777;background-color:#fff;text-align:center;padding:50px 80px;text-align: justify;">
+			<h3 style="text-align:center;">Chinese Dishes</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-3" style="">
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of chinese1; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; ">
+		    		<p *ngFor="let item of chinese2; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3">
+		    	</div>
+		    </div>
+	    </div>
+		<div id="down_arrow" style="transform: rotate(180deg); z-index: 1;">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow" style="transform: rotate(-135deg);"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div class="bgimg-5">
+		<div class="caption" style="background-color: rgba(29,31,33,0.7);color: #f7f7f7;">
+		  <span class="cuisine-border" style="font-size:5rem;">Continental Cuisine</span>
+		  <p>We are involved in offering a wide range of Continental Cuisines to our most precious customers. Our platter of continental cuisine includes light food, which you can enjoy any time of the day. Continental Cuisine generally includes the European and English Dishes. These cuisines includes finest green Salads, Veg and Non-Veg preparations savour the pellet of Gourmet.</p>
+		</div>
+		<div id="down_arrow">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div style="position:relative;">
+		<div style="color:#777;background-color:#fff;text-align:center;padding:50px 80px;text-align: justify;">
+		  	<h3 style="text-align:center;">Pastas</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-3" style="">
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of pasta1; let i = index;">
+		    			{{ item.itName }}
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; ">
+		    		<p *ngFor="let item of pasta2; let i = index;">
+		    			{{ item.itName }}
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3">
+		    	</div>
+		    </div>
+
+		    <h3 style="text-align:center; margin-top: 10vh;">Pizzas</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-3" style="">
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of pizza1; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; ">
+		    		<p *ngFor="let item of pizza2; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3">
+		    	</div>
+		    </div>
+
+		    <h3 style="text-align:center; margin-top: 10vh;">Baked Dishes</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-3" style="">
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of baked1; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; ">
+		    		<p *ngFor="let item of baked2; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3">
+		    	</div>
+		    </div>
+
+		    <h3 style="text-align:center; margin-top: 10vh;">Burgers</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		      	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-4" style="text-align: center;">
+		      	</div>
+		      	<div class="col-md-4" style="text-align: center; ">
+	      		  <p *ngFor="let item of burger1; let i = index;">
+	      		  	{{ item.itName }}
+	      		  	<br>
+	      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+	      		  </p>
+		      	</div>
+		      	<div class="col-md-4">
+		      	</div>
+		    </div>
+
+		    <h3 style="text-align:center; margin-top: 10vh;">Sandwiches</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-3" style="">
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of sandwich1; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; ">
+		    		<p *ngFor="let item of sandwich2; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3">
+		    	</div>
+		    </div>
+
+		    <h3 style="text-align:center; margin-top: 10vh;">Salads</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-3" style="">
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of salad1; let i = index;">
+		    			{{ item.itName }}
+
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; ">
+		    		<p *ngFor="let item of salad2; let i = index;">
+		    			{{ item.itName }}
+
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3">
+		    	</div>
+		    </div>
+
+		</div>
+		<div id="down_arrow" style="transform: rotate(180deg); z-index: 1;">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow" style="transform: rotate(-135deg);"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div class="bgimg-6">
+		<div class="caption" style="background-color: rgba(29,31,33,0.7);color: #f7f7f7;">
+		  <span class="cuisine-border" style="font-size:5rem;">Beverages</span>
+		</div>
+		<div id="down_arrow">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div style="position:relative;">
+		<div style="color:#777;background-color:#fff;text-align:center;padding:50px 80px;text-align: justify;">
+			<h3 style="text-align:center;">Refreshing Drinks</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-3" style="">
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of beverage1; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; ">
+		    		<p *ngFor="let item of beverage2; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3">
+		    	</div>
+		    </div>
+
+		    <h3 style="text-align:center; margin-top: 10vh;">Mocktails</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-3" style="">
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of mocktail1; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; ">
+		    		<p *ngFor="let item of mocktail2; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3">
+		    	</div>
+		    </div>
+		</div>
+		<div id="down_arrow" style="transform: rotate(180deg); z-index: 1;">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow" style="transform: rotate(-135deg);"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div class="bgimg-7">
+		<div class="caption" style="background-color: rgba(29,31,33,0.7);color: #f7f7f7;">
+		  <span class="cuisine-border" style="font-size:5rem;">Starters</span>
+		</div>
+		<div id="down_arrow">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div style="position:relative;">
+		<div style="color:#777;background-color:#fff;text-align:center;padding:50px 80px;text-align: justify;">
+			<h3 style="text-align:center;">Appetizers</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-4" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of starter1; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-4" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of starter2; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-4" style="text-align: center;">
+		    		<p *ngFor="let item of starter3; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    </div>
+
+		    <h3 style="text-align:center; margin-top: 10vh;">Soups</h3>
+		    <div style="margin-top: 5vh; margin-bottom: 5vh;">
+		    	<p style=" border-top: 2px solid #f7941d;"></p>
+		    </div>
+		    <div class="row" style="font-size: 1rem;">
+		    	<div class="col-md-3" style="">
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; border-right: 2px solid #f7941d;">
+		    		<p *ngFor="let item of soup1; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3" style="text-align: center; ">
+		    		<p *ngFor="let item of soup2; let i = index;">
+		    			{{ item.itName }}
+		    			<br>
+		      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+		    		</p>
+		    	</div>
+		    	<div class="col-md-3"></div>
+		    </div>
+		</div>
+		<div id="down_arrow" style="transform: rotate(180deg); z-index: 1;">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow" style="transform: rotate(-135deg);"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div class="bgimg-8">
+		<div class="caption" style="background-color: rgba(29,31,33,0.7);color: #f7f7f7;">
+		  <span class="cuisine-border" style="font-size:5rem;">Accompaniments</span>
+		</div>
+		<div id="down_arrow">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div style="position:relative;">
+		<div style="color:#777;background-color:#fff;text-align:center;padding:50px 80px;text-align: justify;">
+			<h3 style="text-align:center;">Side Dishes</h3>
+			<div style="margin-top: 5vh; margin-bottom: 5vh;">
+				<p style=" border-top: 2px solid #f7941d;"></p>
+			</div>
+			<div class="row" style="font-size: 1rem;">
+				<div class="col-md-4" style="text-align: center;"></div>
+	      		<div class="col-md-4" style="text-align: center;">
+	      			<p *ngFor="let item of accompaniment1; let i = index;">
+	      				{{ item.itName }}
+	      				<br>
+	      				<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+	      			</p>
+	      		</div>
+	      		<div class="col-md-4"></div>
+	      	</div>
+		</div>
+		<div id="down_arrow" style="transform: rotate(180deg); z-index: 1;">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow" style="transform: rotate(-135deg);"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div class="bgimg-9">
+		<div class="caption" style="background-color: rgba(29,31,33,0.7);color: #f7f7f7;">
+		  <span class="cuisine-border" style="font-size:5rem;">Dessert</span>
+		</div>
+		<div id="down_arrow">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div style="position:relative;">
+		<div style="color:#777;background-color:#fff;text-align:center;padding:50px 80px;text-align: justify;">
+			<h3 style="text-align:center;">Sweet Dishes</h3>
+			<div style="margin-top: 5vh; margin-bottom: 5vh;">
+				<p style=" border-top: 2px solid #f7941d;"></p>
+			</div>
+			<div class="row" style="font-size: 1rem;">
+				<div class="col-md-4" style="text-align: center;">
+				</div>
+	      	<div class="col-md-4" style="text-align: center;">
+	      		<p *ngFor="let item of dessert1; let i = index;">
+	      			{{ item.itName }}
+	      			<br>
+	      			<i style="font-size: 0.8rem;"> {{ item.id }} </i>
+	      		</p>
+	      	</div>
+	      	<div class="col-md-4">
+	      	</div>
+		</div>
+		<div id="down_arrow" style="transform: rotate(180deg); z-index: 1; position: relative;">
+		    <svg class="blurp--top" width="192" height="61" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+		      <path fill="#FFFFFF" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+		    </svg>
+		    <div class="down-arrow down-arrow--bubble">
+		      <div class="arrow_container">
+		        <div id="arrow" style="transform: rotate(-135deg);"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+</div>

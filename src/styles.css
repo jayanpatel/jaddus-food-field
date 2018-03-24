@@ -1,1 +1,497 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #333;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #f5f5f5;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #000;
+  border: .05rem solid #f5f5f5;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  font-family: cabin, calibri, sans-serif, Arial;
+}
+body {
+  color: white;
+  text-align: center;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  /*box-shadow: inset 0 0 5rem rgba(255,255,255,.3);*/
+  background-color: #1d1f21;
+  margin: 0 auto;
+  border: solid #fff;
+  /*border-left: solid 0.5vw #fff;
+  border-left: solid 0.5vw #fff;*/
+  border-width: 0vw 0.5vw 0px 0.5vw;
+}
+.site-wrapper-inner {
+  display: block;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cover-heading {
+  font-size: 5rem;
+}
+
+/* Padding for spacing */
+.inner {
+  padding-top: 1rem;
+}
+
+
+/*
+ * Header
+ */
+
+/*.masthead {
+  margin-bottom: 2rem;
+}*/
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  /*font-weight: 700;*/
+  /*color: rgba(255,255,255,.5);*/
+  color: white;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.nav-masthead .nav-link:hover/*,
+.nav-masthead .nav-link:focus*/ {
+  /*border-bottom-color: rgba(255,255,255,.25);*/
+  border-bottom-color: #999999;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 3rem;
+  display: inline-block;
+}
+
+.nav-masthead .active {
+  color: white;
+  border-bottom-color: #f7941d;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  border: solid white 1px;
+  height: 70vh;
+  width: 95%;
+  margin: 4.5% auto auto auto;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  /*color: rgba(255,255,255,.5);*/
+  color: #191919;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    bottom: 0;
+  }
+
+  /* Start the vertical centering */
+  /*.site-wrapper-inner {
+    vertical-align: middle;
+  }*/
+
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 42rem;
+  }
+}
+
+.container {
+  background-color: rgba(29,31,33,0.7);
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  font-size: 0.85em;
+  font-weight: normal;
+}
+
+.nav {
+  display: inline-block;
+  padding-top: 4vh;
+}
+
+.section_container {
+  height: 100vh;
+  width: 100vw;
+  /*padding-top: 3%;*/
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#home_top {
+	/*background: url('https://i.pinimg.com/736x/9a/3a/8a/9a3a8ac82b68d7cf17ef09559dc6ee84--photo-class-creative-portraits.jpg');
+	background-size: cover;
+	background-repeat: round;
+	filter: grayscale(100%);*/
+}
+
+#logo_container {
+  padding-left: 0vw;
+  left: -2.9vh;
+}
+
+#header_logo {
+  height: 15vh;
+  max-height: 90%;
+}
+
+/*#down_arrow {
+  bottom: 0%;
+  width: 100%;
+  position: absolute;
+}*/
+
+#down_arrow, #flip_down_arrow {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  background-color: #fff;
+  height: 10px;
+}
+
+#down_arrow:after {
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 19 14' width='19' height='14' enable-background='new 0 0 19 14' xml:space='preserve' preserveAspectRatio='none slice'><g><path fill='#fff' d='M0,0c4,0,6.5,5.9,9.5,5.9S15,0,19,0v7H0V0z'/><path fill='#fff' d='M19,14c-4,0-6.5-5.9-9.5-5.9S4,14,0,14l0-7h19V14z'/></g></svg>");
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 14px;
+  margin-bottom: 10px;
+}
+
+#flip_down_arrow:after {
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 19 14' width='19' height='14' enable-background='new 0 0 19 14' xml:space='preserve' preserveAspectRatio='none slice'><g><path fill='#fff' d='M0,0c4,0,6.5,5.9,9.5,5.9S15,0,19,0v7H0V0z'/><path fill='#fff' d='M19,14c-4,0-6.5-5.9-9.5-5.9S4,14,0,14l0-7h19V14z'/></g></svg>");
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 14px;
+  margin-bottom: 10px;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.slides_headings {
+  font-family: 'Herr Von Muellerhoff', 'Lobster', cursive, calibri, sans-serif;
+}
+
+.carousel {
+  height: 100%;
+}
+
+.carousel-control-prev {
+  width: 5% !important;
+}
+
+.carousel-control-next {
+  width: 5% !important;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+#home_main {
+  padding-top: 0px !important;
+}
+
+.home_slides {
+  height: 100%;
+}
+
+.slide_container {
+  background-color: rgba(29,31,33,0.5);
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+#arrow {
+  width: 16px;
+  height: 16px;
+  margin-left: -8px;
+  margin-top: -32px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#flip_arrow {
+  transform: rotate(225deg) !important;
+}
+
+.blurp--top {
+  margin-top: -40vh;
+}
+
+.carousel-indicators {
+  bottom: 0px !important;
+}
+
+/*border-width: 0px 10px 10px 0px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: 0 auto;
+    border-radius: 15px 0px;*/
+
+#menu-page
+{
+	/*height: 100vh;*/
+  background-color: white;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("http://mehfilbestcuisine.com/wp-content/uploads/2015/12/Featured-image-indian-food.jpg");
+  /*http://eathealthyeathappy.com/wp-content/uploads/2014/07/mexicanrice1feat2-e1411059759304.jpg*/
+  height: 100vh;
+  /*margin-top: 9.4%;*/
+  /*opacity: 0.65;*/
+}
+
+.bgimg-2 {
+  background-image: url("https://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2014/11/18/0/CC_comfort-food-mexican-comfort-feast-story-opener_s4x3.jpg.rend.hgtvcom.966.725.suffix/1416343639622.jpeg");
+  /*http://anejosrestaurant.net/files/2016/02/anejos-DL-02.jpg*/
+  /*http://www.nrn.com/sites/nrn.com/files/styles/article_featured_standard/public/uploads/2015/09/stockmexicanfoodpromo_0.jpg?itok=w-9OXW-m*/
+  height: 100vh;
+}
+
+.bgimg-3 {
+  background-image: url("https://d2jzxcrnybzkkt.cloudfront.net/uploads/2016/06/Nara_Thai_Range_of_Dishes_jpg_1466646710.jpg?date=201802072000");
+  height: 100vh;
+}
+
+.bgimg-4 {
+  background-image: url("https://s3.amazonaws.com/medias.photodeck.com/0318de30-dd5b-4827-9c09-406bfa8e69e9/12LN0315-06_xlarge.jpg");
+  /*http://images.mentalfloss.com/sites/default/files/styles/mf_image_3x2/public/521724-istock-545286388.jpg?itok=Tv3OY5wC&resize=1100x740*/
+  /*https://t4.ftcdn.net/jpg/01/15/26/27/500_F_115262791_CnrSNGwfwVtX8WfavIuUcXI7yVyfrhut.jpg*/
+  height: 100vh;
+}
+
+.bgimg-5 {
+  background-image: url("https://dpvkezs64piyl.cloudfront.net/media/vendormaster/2017/May/cover_1495539485.jpg");
+  height: 100vh;
+}
+
+.bgimg-6 {
+  background-image: url("http://portal-od.com/_ld/3/70378485.jpg");
+  height: 100vh;
+}
+
+.bgimg-7 {
+  background-image: url("./assets/images/starters.jpg");
+  height: 100vh;
+}
+
+.bgimg-8 {
+  background-image: url("https://i.ndtvimg.com/i/2015-10/chutney-625_625x350_71445612013.jpg");
+  height: 100vh;
+}
+
+.bgimg-9 {
+  background-image: url("https://image.freepik.com/free-photo/top-view-of-desserts-with-coffee-beans-and-strawberries_1220-362.jpg");
+  height: 100vh;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.cuisine-border, .caption span.border {
+  /*background-color: #111;
+  opacity: 0.8;
+  color: #fff;*/
+  padding: 2.5rem;
+  font-size: 4rem;
+  /*letter-spacing: 10px;*/
+  font-family: 'Herr Von Muellerhoff', 'Lobster', cursive, calibri, sans-serif;
+}
+
+h3 {
+  /*letter-spacing: 5px;
+  font: 20px "Lato", sans-serif;
+  text-transform: uppercase underline;*/
+  /*text-decoration: underline;*/
+  color: #111;
+  width: 100%;
+  text-align: left;
+}
+
+#map {
+  height: 50%;
+  width: 100%;
+  margin: 0 auto;
+  visibility: visible;
+}
+
+#footer_contact {
+  height: 70vh;
+  color: #000;
+}
+
+#location_section {
+  width: 40%;
+}
+
+#contact-us {
+  border: solid black 1px;
+  height: 70vh;
+  width: 95%;
+  margin: 4% auto auto auto;
+}
+
+#contact_section {
+  width: 30%;
+  float: left;
+}
+
+li {
+  display: block;
+  text-align: left;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+span {
+  vertical-align: super;
+  letter-spacing: 0.5px;
+}
+
+i {
+  margin-right: 5px;
+}
+
+ul {
+  padding: 0px !important;
+}
+
+.location_hide {
+  visibility: hidden;
+}
+
+#about-header {
+  width: 14rem;
+  margin: 2rem auto auto auto;
+  font-family: 'Herr Von Muellerhoff', 'Lobster', cursive, calibri, sans-serif;
+  font-size: 4rem;
+  border-bottom: 2px solid white;
+}
+
+#about_section {
+  width: 95%;
+  margin: 2rem auto auto auto;
+  border: 0.1rem solid white;
+}
